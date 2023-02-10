@@ -1,0 +1,204 @@
+{% extends 'base.html'%}
+{% load static%}
+{% block content%}  
+                        <div class="col-xl-2 col-md-2">
+                            <div class="site-info d-flex justify-content-end">
+                                <div class="search position-relative mr-15 ">
+                                    <a href="#"><img src="{% static 'assets/img/icon/search.png'%}" alt=""></a>
+                                    <div class="search-form">
+                                        <form action="#">
+                                            <input type="text" placeholder="Enter your keywords.....">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="react position-relative mr-15">
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <div class="badge">0</div>
+                                </div>
+                                <div  class="cart position-relative mr-10">
+                                    <a href="#" id="mini-cart" class="mini-cart-hide"><img src="{% static 'assets/img/icon/bag.png'%}" alt=""></a>
+                                    <!-- <button id="mini-cart"><img src="{% static 'assets/img/icon/bag.png'%}" alt=""></button> -->
+                                    <div class="badge">0</div>
+
+                                    <div id="cart-show"  class="product-area product-shop-page mini-cart-product-page " >
+                                        <div class="hot-sale-product-area "  >
+                                            <div class="hot-lookbook pt-10 pb-30">
+                                                <div class="product-wrapper d-flex">
+                                                    <div class="product-img pr-15">
+                                                        <img src="{% static 'assets/img/product/product-23.png'%}" alt="product">
+                                                        <div class="cart-icon">
+                                                            <img src="{% static 'assets/img/icon/cart-white.png'%}" alt="cart">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-detalis">
+                                                        <span>Men Dress</span>
+                                                        <h6><a href="shop-detalis-page.html">Military Patch Pocket Blazer</a></h6>
+                                                        <div class="price d-flex">
+                                                            <span>$999</span>
+                                                            <del>$899</del>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-wrapper mt-10 d-flex">
+                                                    <div class="product-img pr-15">
+                                                        <img src="{% static 'assets/img/product/product-27.png'%}" alt="product">
+                                                        <div class="cart-icon">
+                                                            <img src="{% static 'assets/img/icon/cart-white.png'%}" alt="cart">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-detalis ">
+                                                        <span>Men Dress</span>
+                                                        <h6><a href="shop-detalis-page.html">Military Patch Pocket Blazer</a></h6>
+                                                        <div class="price d-flex">
+                                                            <span>$999</span>
+                                                            <del>$899</del>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-price-area text-right pt-15 pr-20">
+                                                    <p>Sub total: <span class="d-inline-block pl-30"> $999.00</span></p>
+                                                    <p>Total:  <span class="d-inline-block pl-30"> $999.00</span></p>
+                                                </div>
+                                                <div class="table-button mini-cart-btn text-center pt-5">
+                                                    <a class="b-btn pt-15 pb-15 pr-20 pl-20" href="#">View Cart</a>
+                                                    <a class="b-btn pt-15 pb-15 pr-20 pl-20" href="#">Checkout</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="mobile-menu"></div>
+                </div>
+            </div>
+            
+
+        </div>
+    </header>
+
+    <!-- =================Header Area Ends================= -->
+
+    <!-- =================Page Title Area Starts================= -->
+
+    <div class="page-title-area pt-130 pb-120" style="background-image: url({% static 'assets/img/bg/contact-bg.png'%});">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="page-titel-detalis  ">
+                        <div class="page-title position-relative">
+                            <h2>Contact Page</h2>
+                        </div>
+                        <div class="page-bc">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html"> <i
+                                                class="fas fa-home "></i>Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page"><a
+                                            href="contact-page.html">Contact Page</a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================Page Title Area Ends================= -->
+
+    <!-- =================Map Area Starts================= -->
+
+    <div class="map-area pt-50 ">
+        <div class="container">
+            <div id="map-container-googl" class="map-container ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96678.79860327231!2d72.24960590524395!3d40.77934317745702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bc901d6b13d4ef%3A0xfc45bcaa7973dfac!2z0JDQvdC00LjQttCw0L0sINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1674211745142!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- =================Map Area Ends================= -->
+
+    <!-- =================Comment  Area Starts================= -->
+                            {% if messages %}
+                              {% for i in messages%}
+                                 <div class="alert alert-success alert-dismissible fade show " role="alert">
+                                       {% autoescape off %}{{i}}{% endautoescape %}
+                                       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                       </button>
+                                 </div>
+                              {% endfor%}
+                           {% endif %}
+    <div class="contact-page comment-area pt-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 col-lg-8 col-md-8 col-sm-7 col-12">
+                    <div class="comment-sidebar">
+                        <div class="section-title d-inline-block">
+                            <h3>
+                                Leave Reply
+                            </h3>
+                        </div>
+                        <div class="post-comment pt-25 ">
+                            <form action="/send_msg/" method ='POST'>
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6">
+                                        <ul class="name">
+                                            <li><label for="name">Nick name:</label></li>
+                                            <li><input type="text" name ='name' id="name"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <ul class="email pt-15 pt-sm-0">
+                                            <li><label for="email">Email Address :</label></li>
+                                            <li><input type="email" name ='email' id="email"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <ul class="text-area pt-10">
+                                            <label class="form-label">Message</label>
+                                       <textarea class="form-control" name="text" id="message" placeholder="Type your message..." rows="4"></textarea>
+                                        </ul>
+                                        {% if user.is_authenticated%}
+                                        <div class="submit pt-30">
+                                            <input type="submit" value="SUBMIT">
+                                        </div>
+                                        {% else %}
+                                        <div class="submit pt-30">
+                                            <a href="/login/"><input type="submit" value="SUBMIT"></a>
+                                        </div>
+                                        {% endif%}
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-5 col-12">
+                    <div class="contact-info">
+                        <div class="section-title d-inline-block text-uppercase">
+                            <h3>
+                                Contact info
+                            </h3>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+                        <ul class="contact pt-15">
+                            <a href="/karta/"><li><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Andijan,Uzbekistan,M'arifat 24</span></li></a>
+                            <li><i class="fas fa-envelope" aria-hidden="true"></i><span>dotsee@one.com</span></li>
+                            <li><i class="fas fa-phone-alt" aria-hidden="true"></i><span>(+11) 987654321</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================Comment  Area Ends================= -->
+
+    <!-- =================Subscribe Area Starts================= -->
+{% endblock content%}
